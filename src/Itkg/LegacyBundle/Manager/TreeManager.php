@@ -9,7 +9,7 @@ class TreeManager
 {
     /**
      * @param array $elements
-     *
+     *  
      * @return array
      */
     public function formatTree(array $elements)
@@ -20,7 +20,7 @@ class TreeManager
                 $hasParent = true;
             }
         }
-
+      
         if (!($hasParent === true)) {
             return $elements;
         }
