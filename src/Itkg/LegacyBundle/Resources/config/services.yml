@@ -1,0 +1,4 @@
+services:
+#    itkg_legacy.example:
+#        class: Itkg\LegacyBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
