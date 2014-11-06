@@ -5,7 +5,7 @@ php:
     - 5.4
 
 install:
-    - composer install --prefer-source --no-interaction
+    - composer install --prefer-dist --no-interaction
 
 script:
     - ./bin/phpunit -c app/
