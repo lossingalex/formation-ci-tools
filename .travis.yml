@@ -8,4 +8,4 @@ install:
     - composer install --prefer-dist --no-interaction
 
 script:
-   - phpunit
+   - phpunit -c app/
