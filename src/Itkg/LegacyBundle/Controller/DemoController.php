@@ -14,8 +14,12 @@ class DemoController extends Controller
      */
     public function demoAction()
     {
+        $demoRepositoy = $this->get('doctrine')->getRepository('ItkgLegacyBundle:Demo');
+
+        $demo = $demoRepositoy->find(1);
+
         return array(
-                // ...
+            'demo' => $demo
             );    }
 
 }
