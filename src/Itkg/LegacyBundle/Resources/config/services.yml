@@ -1,4 +1,9 @@
 services:
-#    itkg_legacy.example:
-#        class: Itkg\LegacyBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    itkg_legacy.subscriber.increment_count:
+        class: Itkg\LegacyBundle\Subscriber\IncrementCountSubscriber
+        tags:
+            - { name: kernel.event_subscriber }
+    itkg_legacy.listener.increment_count:
+        class: Itkg\LegacyBundle\Listener\IncrementCountListener
+        tags:
+            - { name: kernel.event_listener, event: display.demo, method: execute, priority: 20 }
