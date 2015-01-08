@@ -1,0 +1,4 @@
+itkg_legacy:
+    resource: "@ItkgLegacyBundle/Controller"
+    type: annotation
+    prefix: /
