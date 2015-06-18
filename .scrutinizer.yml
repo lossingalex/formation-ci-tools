@@ -9,6 +9,17 @@ checks:
 	duplication: true	
 
 tools:
-    php_analyzer: true
-
+    php_sim: true
+    php_changetracking: true
+    php_cs_fixer:
+        config: { level: psr2 } 
+    php_mess_detector: true
+    php_pdepend: true
+    php_analyzer: false
+    sensiolabs_security_checker: true
+    php_code_sniffer:
+        enabled: true
+        config:
+          standard: PSR2
+    external_code_coverage: true
 
