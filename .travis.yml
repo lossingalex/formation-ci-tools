@@ -9,5 +9,5 @@ install:
 script:
  - ./bin/phpunit -c app/
 
-
+sudo: false
 
