@@ -1,7 +1,6 @@
 
 filter:
-    paths:
-	- src/*
+    paths: [src/*] 
 
 checks:
     php:
